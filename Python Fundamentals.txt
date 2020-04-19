@@ -1,0 +1,1265 @@
+Jupyter Notebook
+Practice
+(autosaved)
+Current Kernel Logo
+Python 3 
+File
+Edit
+View
+Insert
+Cell
+Kernel
+Help
+
+MATH OPERATIONS
+2-1
+3333*38
+7%4
+1.75*4 %2
+1000 % 900
+VARIABLE ASSIGNMENTS
+a = 5
+print(a)
+a
+a + a
+a = a + a
+a
+a = a + a
+?
+a
+type(a)
+a = 10.3
+type(a)
+my_income = 100
+tax_rate = 0.1
+my_taxes = my_income * tax_rate
+my_taxes
+STRING OPERATIONS
+'hello'
+"hello"
+'this is also a string'
+"i'm going on a run"
+print("hello")
+"hello 1"
+"hello 2"
+print('hello \nworld')
+print('hello \t world')
+len("hello")
+len("i am hungry")
+STRING INDEXING
+mystring = "Hello world"
+mystring[3]
+mystring[-1]
+mystring[-4]
+STRING SLICING
+mystring[2:4:1]
+mystring[:4]
+mystring[4:]
+mystring[3:5]
+mystring = "abcdefghijklmnopqrstuvwxyz"
+mystring
+mystring[::2]
+mystring[2:2]
+mystring[::-2
+    ]
+mystring[2:9:-1]
+STRING CONCATENATION
+name = "Sam"
+last_name = 'P' + name[1:]
+last_name
+letter = "z"
+letter * 10
+"3" + 2
+x = 'hello world'
+x.upper()
+x.translate()
+x.split()
+listx = x.split()
+listx
+STRING FORMATTING
+print("this is a string {}".format("Inserted"))
+print("The {2} {1} {0}".format("fox", "Brown", "quick"))
+print("the {f} {b} {q}".format(f = "fox",  b = "brown", q = "quick"))
+result = 100/777
+result
+print("The result was {r:1.3f}".format(r = result))
+name = "Nicolo"
+print(f"Hello, his name is {name}")
+age = 16
+print (f"hello, {name} is {age} years old")
+mylist = ['a', 'v', 'd', 'd']
+' '.join(mylist)
+LIST OPERATIONS
+my_list = [1, 2, 3]
+my_list = ["String", 2.11, 12]
+len(my_list)
+mylist = ["one", "two", "three"]
+mylist[0:]
+another_list = ["four", "five"]
+mylist + another_list
+newlist = mylist + another_list
+newlist[0] = "One alskdjfi"
+newlist
+newlist.append("six")
+newlist
+newlist.append("seven")
+newlist
+newlist.pop(2)
+newlist
+newlist.pop()
+newlist.pop(len(newlist) - 1)
+newlist = ["a", 'w', 'd']
+numlist = [2, 5,1,4,22]
+newlist.sort()
+newlist
+newlist.reverse()
+newlist
+string = "hello"
+string[::-1]
+DICTIONARY OPERATIONS
+my_dict = {'key1':'value1', 'key2':'value2', 'key3':'value3'}
+my_dict = {"key1":3, "key2": 33}
+prices = {'Apples': 1.2, 'Oranges': 1, 'Peaches': 2, 'Dates': [.5f, .3f]}
+prices['Apples']
+prices['Apples':]
+prices[1.2]
+prices['Dates'][1]
+d = {'k1' : 100, 'k2' : 200, 'k3' : 300, 'k4' : 400}
+d.keys
+d.keys()
+d.values()
+d.items()
+TUPLE OPERATIONS
+t = (1, 2, 3)
+mylist = [1, 2, 3]
+t
+t = ('one', 2)
+t[0]
+t[-1]
+t = ('a', 'a', 'b')
+t.count('a')
+t.index('a')
+t.index('b')
+t
+mylist
+mylist[0] = 'NEW'
+mylist
+t[0] = "new"
+    SET OPERATIONS
+myset = set()
+myset
+myset.add(1)
+myset
+myset.add(2)
+myset
+myset.add(2)
+myset
+mylist = [1,1,2,1,2,1,2,1,2,1,2,1,2]
+set(mylist)
+BOOLEAN OPERATIONS
+True
+False
+type(False)
+1 < 2
+1 == 3
+b = None
+FILE OPERATIONS
+%%writefile myfile.txt
+Hello this is a text file
+this is the second line
+this is the third line
+myfile = open('myfile.txt')
+myfile = open('OOPS wrong')
+pwd
+myfile = open('myfile.txt')
+myfile.read()
+myfile.read()
+myfile.seek(0)
+myfile.read()
+myfile.seek(10)
+help(seek())
+myfile.read()
+myfile.seek(0)
+contents = myfile.read()
+contents
+myfile.seek(0)
+myfile.readlines()
+For Windows you need to use double \ so python doesn't read the second \ as an escape character, a file path is in the form:
+
+myfile = open("C:\Users\Username\Folder\test.txt")
+
+myfile.close()
+with open('myfile.txt') as my_new_file:
+    contents = my_new_file.read()
+contents
+Reading, Writing, Appending Modes
+
+mode = 'r' is read only
+mode = 'w' is write only (will overwrite files or create new!)
+mode = 'a' is append only (will add on to files)
+mode = 'r+' is reading and writing
+mode = 'w+' is writing and reading (overwrites existing files or creates a new file!)
+with open('myfile.txt', mode = 'r') as myfile:
+    contents = myfile.read()
+contents
+with open('myfile.txt', mode = 'w') as myfile:
+    contents = myfile.read()
+%%writefile my_new_file.txt
+One on first
+two on second
+threee on third
+with open('my_new_file.txt', mode='r') as f:
+    print(f.read())
+with open('my_new_file.txt', mode='a') as f:
+    print(f.write('four on fourth'))
+with open('my_new_file.txt', mode='r') as f:
+    print(f.read())
+with open('dkdhalkhd.txt', mode = 'w') as f:
+    f.write('I created this file!')
+with open('dkdhalkhd.txt', mode = 'r') as f:
+    print(f.read())
+If, elif, else STATEMENTS
+hungry = True
+?
+if hungry:
+    print("feed me")
+else:
+    print("im not hungry")
+loc = 'store'
+?
+if loc == 'Auto Shop':
+    print("cars are cool")
+elif loc == 'Bank':
+    print("money is cool")
+elif loc == 'Store':
+    print("Welcome to the store")
+else:
+    print("i do not know much")
+name = "Nicolo"
+?
+if name == "Nicolo":
+    print("Hello {}".format(name))
+FOR LOOPS
+my_list = [70, 60, 55, 95, 12]
+?
+for i in range(0, len(my_list)):
+    if num % 2 == 0:
+        print(num)
+    else:
+        print(f'Odd number: {num} ')
+list_sum = 0
+?
+for num in my_list:
+    list_sum = list_sum + num
+    
+print(list_sum)
+my_string = "Hello world"
+?
+for letter in my_string:
+    print(letter)
+tup = (1,2,3)
+?
+for item in tup:
+    print(item)
+my_list = [(1,2), (3,4), (5,6), (7,8)]
+len(my_list)
+for item in my_list:
+    print(item)
+for (a, b) in my_list:
+    print(a)
+    print(b)
+my_dict = {"k1": 1, "k2": 2, "k3": 3}
+for key, value in my_dict.items():
+    print(key)
+    print(value)
+WHILE LOOPS
+x = 0
+?
+while x < 5:
+    print(x)
+    x+=1
+else:
+    print("x is not less than five")
+BREAK, CONTINUE, PASS
+
+We can use break, continure and pass statements in our loops to add additional functionality for various cases. The three statements are defined by:
+
+break: Breaks out of the current closest enclosing loop
+continue: Goes to the top of the closest enclosing loop
+pass: Does nothing at all
+x = [1,2,3]
+?
+for item in x:
+    #comment
+    pass
+?
+print("end of my script")
+my_string = "Nicolo"
+for letter in my_string:
+    if letter == "o":
+        break
+    print(letter)
+x = 0
+?
+while x < 5:
+    
+    if x==2:
+        break
+    print(x)
+    x+=1
+USEFUL OPERATORS
+mylist = [1,2,3]
+#range (start, stop - 1, step)
+for num in range(2, 10, 2):
+    print(num)
+list(range(0, 11, 2))
+index_count = 0
+word = "AbCdEfG"
+?
+for a, b in enumerate(word):
+    print(a)
+    print(b)
+my_list_1 = [1,2,3,4,5]
+my_list_2 = ['a', 'b', 'c', 'd', 'e']
+for item in zip(my_list_1, my_list_2):
+    print(item)
+list(zip(my_list_1, my_list_2))
+2 in [1,2,3]
+'x' in ['a', 'x', 'c']
+'myKey' in {'myKey': 1}
+mylist = [10,20,30,40,50]
+min(mylist)
+max(mylist)
+from random import shuffle
+my_list = [1,2,3,4,5,6]
+shuffle(my_list)
+my_list
+type(my_list)
+from random import randint
+randint(0, 100)
+mynum = randint(0, 10)
+mynum
+result = input('Enter a number here: ')
+result
+type(result)
+float(result)
+int(result)
+LIST COMPREHENSIONS
+my_list = []
+?
+for letter in my_string:
+    my_list.append(letter)
+my_list
+variable = [element for element in object]
+
+my_list = [letter for letter in my_string]
+my_list
+my_list = [x**2 for x in range(0,11)]
+my_list
+my_list = [x for x in range(0, 11) if x%2 == 0]
+my_list
+celcius = [0, 10, 20, 34.5]
+fahrenheit = [((9/5) * temp + 32) for temp in celcius]
+fahrenheit
+fahrenheit = []
+?
+for temp in celcius:
+    fahrenheit.append(((9/5)*temp + 32))
+fahrenheit
+results = [x if x%2==0 else 'ODD' for x in range(0, 11)]
+results
+my_list = []
+?
+for x in [2,4,6]:
+    for y in [100, 200, 300]:
+        my_list.append(x*y)
+my_list
+my_list = [x*y for x in [2,4,6] for y in [100, 200, 300]]
+my_list
+METHODS
+
+mylist = [1,2,3,4]
+mylist.pop()
+mylist.append(3)
+mylist
+mylist.insert(2, 77)
+mylist
+help(mylist.insert)
+FUNCTIONS
+
+def my_function():
+    '''
+    DOCSTRING: Information about the function
+    Input: name
+    Output: Hello ...
+    '''
+    print("hello")
+my_function()
+help(my_function)
+def greet(name = "john doe"):
+    return "Hello " + name
+result = greet("Nicolo")
+result
+def add(n1, n2):
+    return n1 + n2
+result = add(4, 5)
+result
+#find out if the word dog is in a string
+def dog_check(s):
+    return "dog" in s.lower()
+dog_check("my dog ran")
+def pig_latin(word):
+    
+    first_letter = word[0] 
+    
+    #check if vowel
+    if first_letter in 'aeiou':
+        pig_word = word + 'ay'
+        
+    else: 
+        pig_word = word[1:] + first_letter + 'ay'
+        
+    return pig_word
+print(pig_latin("nicolo"))
+*args AND **kwargs
+def myfunc(a,b, c=0, d=0, e=0):
+    # returns 5% of the sum of a and b
+    return sum((a,b,c,d,e)) * 0.05
+myfunc(40,60,100)
+def myfunc(*args):
+    for item in args:
+        print(item)
+myfunc(1,2,3,4,5,6,7,8,9,10)
+def myfunc(**kwargs):
+    if 'fruit' in kwargs:
+        print('My fruit of choice is {}'.format(kwargs['fruit']))
+    else:
+        print('I did not find any fruit here')
+myfunc(fruit='apple', veggie = 'lettuce')
+def myfunc(*args, **kwargs):
+    print(args)
+    print(kwargs)
+    print("I would like {} {}".format(args[0], kwargs["food"]))
+myfunc(10,20,30, food = "apple", animal = "dog")
+PRACTICE PROBLEMS
+def lesser(a,b):
+    if a%2 == 0 and b%2==0:
+        return min(a,b)
+    else:
+        return max(a,b)
+lesser(12,34)
+def animal_crackers(phrase):
+    newList = phrase.lower().split()
+    return newList[0][0] == newList[1][0]
+animal_crackers("crazy Cracker")
+animal_crackers("krazy cracker")
+def makes_twenty(a, b):
+    return a == 20 or b == 20 or a + b == 20
+makes_twenty(19,11)
+def name_caps(name):
+    newName = ""
+    for i in range(0, len(name), 1):
+        if i == 0 or i == 4:
+            newName += name[i].upper()
+        else:
+            newName += name[i]
+    return newName
+name_caps("nicolo")
+def master_yoda(phrase):
+    newList = phrase.split()
+    newPhrase = newList[::-1]
+    return ' '.join(newPhrase)
+master_yoda("I am home")
+def almost_there(n):
+    return abs(100 - n) <=10 or abs(200 - n) <=10
+almost_there(100)
+def has3(arr):
+    for i in range(0, len(arr) - 1):
+        if arr[i:i+2] == [3,3]:
+            return True
+    return False
+mylist = [1,2,3,3, 3, 4, 3,5]
+has3(mylist)
+def summer_69(arr):
+    tot = 0
+    add = True
+    
+    for num in arr:
+        while add:
+            if num != 6:
+                tot += num
+                break
+            else:
+                add = False
+                break
+        while not add:
+            if num !=9:
+                break
+            else:
+                add = True
+                break
+    return tot
+summer_69([1,2,3,4,6,7,8,8,9,10])
+def spy_game(nums):
+    
+    code = [0,0,7, 'x']
+    
+    for num in nums:
+        if num == code[0]:
+            code.pop(0)
+            
+    return len(code) == 1
+spy_game([1,2,3,0,0,7,8,9])
+spy_game([1,2,3,4,5,6,7,8,9,0])
+spy_game([0,1,2,3,0,4,5,6,7,8,9])
+def prime_nums(n):
+    if n < 2:
+        return 0
+    
+    prime = [2]
+    x = 3
+    
+    while x <= n:
+        for num in range(3, x,2):
+            if x % num == 0:
+                x+= 2
+                break
+        else:
+            prime.append(x) 
+            x+= 2
+        
+    print(len(prime)) 
+    return len(prime)
+       
+prime_nums(100)
+LAMBDA EXPRESSIONS, MAP, AND FILTERS
+def square(num):
+    return num**2
+my_nums= [1,2,3,4,5]
+for item in map(square, my_nums):
+    print(item)
+list(map(square, my_nums))
+def splicer ( mystring):
+    if len(mystring)%2 == 0:
+        return 'Even'
+    else:
+        return mystring[0]
+names = ['andy', 'eve', 'sally']
+list(map(splicer, names))
+def check_even(num):
+    return num%2 == 0
+mynums = [1,2,3,4,5,6]
+list(filter(check_even, mynums))
+square = lambda num: num ** 2
+square(3)
+list(map(lambda num:num**2, mynums))
+list(filter(lambda num: num%2==0,mynums))
+names
+list(map(lambda x: x[::-1], names))
+NESTED STATEMENTS AND SCOPE
+LEGB RULE:
+
+L: Local - Names assigned in any way within a function (def or lambda), and not declared global in that function
+
+E: Enclosing function locals - Names in the local scope of any and all enclosing functions (def or lambda), from inner  to   outer
+
+G: Global (module) - Names assigned at the top-level of a module file, or declared global in a def within the file
+
+B: Built-in (Python) - Names preassigned in the built-in names module : open, range, SyntaxError
+# lambda num:num**2
+#GLOBAL
+name = 'THIS IS A GLOBAL STRING'
+?
+def greet():
+    
+    #ENCLOSING
+    name = 'Sammy'
+    
+    def hello():
+        #LOCAL
+        name = 'IM A LOCAL'
+        print('Hello '+name)
+        
+    hello()
+?
+greet()
+x = 50 
+?
+def func():
+    #try not to use the global keyword. Rather reassign a passed parameter and return it
+    global x
+    print(f'X is {x}')
+    
+    #LOCAL REASSIGNMENT ON A GLOBAL VARIABLE!
+    x = 200
+    print("i just locally changed global x to {}".format(x))
+func()
+FUNCTION PRACTICE
+def ran_check(num, low, high):
+    return low <= num <= high
+ran_check(10, 5, 15)
+def up_low(s):
+    words = s.split()
+    upper = 0
+    lower = 0
+    for w in words:
+        for char in w:
+            if char == char.upper():
+                upper+=1
+            else:
+                lower+=1
+            
+    print('Upper: ' + str(upper) + '\nLower: ' + str(lower))
+up_low('Nicolo Cammarano')
+def unique_list(l):
+    myset = set(l)
+    return list(myset)
+unique_list([1,1,1,1,2,2,2,2,2,3,3,3,4,5,5,5,5])
+def multiply(numbers):
+    total = numbers[0]
+    for n in range(1, len(numbers)):
+        total *= numbers[n]
+    return total
+multiply([1,2,3,-4])
+def palindrome(s):
+    return s == s[::-1]
+palindrome("tacocat")
+import string
+?
+def ispangram(s, alphabet = string.ascii_lowercase):
+    alphaset = set(alphabet)
+    return alphaset <= set(s.lower())
+ispangram('the quick brown fox jumps over the lazy dog')
+x = input()
+x = x.upper()
+x
+REGEX OPERATIONS
+import re
+phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+mo = phoneNumRegex.search('My number is 425-286-3047')
+print('Phone number found: ' + mo.group())
+phoneNumRegex = re.compile(r'(\d\d\d)-(\d\d\d-\d\d\d\d)')
+mo = phoneNumRegex.search('my number is 425-555-5555')
+mo.group(1)
+mo.group(2)
+mo.group()
+mo.group(0)
+mo.groups()
+areaCode, mainNumber = mo.groups()
+areaCode
+mainNumber
+phoneNumRegex = re.compile(r'(\(\d\d\d\)) (\d\d\d-\d\d\d\d)')
+mo = phoneNumRegex.search('My phone number is (415) 555-3423')
+mo.group(1)
+mo.group(2)
+mo.group()
+heroRegex = re.compile(r'Batman|Tina Fey')
+mo1 = heroRegex.search('Batman and Tina Fey')
+mo1.group()
+mo2 = heroRegex.search('Tina Fey and Batman')
+mo2.group()
+batRegex = re.compile(r'Bat(man|mobile|woman|bat)')
+mo = batRegex.search('Batnaj batmbiel batwoamn Batbat')
+mo.group()
+batRegex = re.compile(r'Bat(wo)?man')
+mo1 = batRegex.search('The Adventures of Batman')
+mo1.group()
+mo2 = batRegex.search('The Adventures of Batwoman')
+mo2.group()
+phoneRegex = re.compile(r'(\d\d\d-)?\d\d\d-\d\d\d\d')
+mo1 = phoneRegex.search('My number is 415-213-1241')
+mo1.group()
+mo2 = phoneRegex.search('My number is 444-2331')
+mo2.group()
+batRegex = re.compile(r'Bat(wo)*man')
+mo1 = batRegex.search('The Adventures of Batman')
+mo1.group()
+mo2 = batRegex.search('The Adventures of Batwoman')
+mo2.group()
+mo3 = batRegex.search('The Adventures of Batwowowowowowoman')
+mo3.group()
+batRegex = re.compile(r'Bat(wo)+man')
+mo1 = batRegex.search('The Adventures of Batman')
+mo1.group()
+mo2 = batRegex.search('The Adventures of Batwoman')
+mo2.group()
+mo3 = batRegex.search('The Adventures of Batwowowowowowoman')
+mo3.group()
+haRegex = re.compile(r'(Ha){3}')
+mo1 = haRegex.search('HaHaHa')
+mo1.group()
+mo2 = haRegex.search('Ha')
+mo2.group()
+greedyHaRegex = re.compile(r'(Ha){3,6}')
+mo1 = greedyHaRegex.search('HaHaHa')
+mo1.group()
+mo2 = greedyHaRegex.search('HaHaHaHaHa')
+mo2.group()
+phoneNumRegex = re.compile(r'\d{3}-\d{3}-\d{4}')
+mo = phoneNumRegex.search('Cell: 415-241-1231, Work: 421-241-1242')
+mo.group()
+phoneNumRegex.findall('Cell: 415-241-1231, Work: 421-241-1242')
+phoneNumRegex = re.compile(r'(\d\d\d)-(\d\d\d)-(\d\d\d\d)')
+phoneNumRegex.findall('Cell: 112-123-1232 AND Work: 212-212-1232')
+SHORTHAND CHARACTER CLASS
+
+\d == Any numeric digit from 0-9
+\D == Any character that is NOT a numeric digit from 0 - 9
+
+\w == Any letter, numeric digit, or the underscore character (Think of this as matching "word" characters)
+\W == Any character that is NOT a letter, numeric digit, or the underscore character
+
+\s == Any space, tab, or newline character (Think of this as matching "space" characters)
+\S == Any character that is NOT a space, tab, or newline
+xmasRegex = re.compile(r'\d+\s\w+')
+xmasRegex.findall('12 drummers, 11 pipers, 10 lords, 9 ladies, 8 maids, 7 swans, 6 geese, 5 rings, 4 birds, 3 hens, 2 doves, 1 partridge')
+vowelRegex = re.compile(r'[aeiouAEIOU]')
+vowelRegex.findall('Aidan Rohwer is not a good programmer after he used three scanners for three variables.')
+When using [], no need to use \ to escape characters
+consonantRegex = re.compile(r'[^aeiouAEIOU]')
+consonantRegex.findall('Aidan Rohwer is not a good programmer after he used three scanners for three variables.')
+beginsWithHello = re.compile(r'^Hello')
+beginsWithHello.search('Hello world!')
+beginsWithHello.search('World Hello!') == None
+endsWithNumber = re.compile(r'\d$')
+endsWithNumber.search('Your number is 12')
+endsWithNumber.search('12 is your number') == None
+wholeStringIsNum = re.compile(r'^\d+$')
+wholeStringIsNum.search('1234567890')
+wholeStringIsNum.search('12E456789O') == None
+import re
+exponent = re.compile(r'^\d*')
+exponent.search("12^12")
+OBJECT ORIENTED PROGRAMMING
+class NameOfClass():
+    def __init__(self, param1, param2):
+        self.param1 = param1
+        self.param2 = param2
+        
+    def some_method(self):
+        print(self.param1)
+class Dog():
+    
+    # CLASS OBJECT ATTRIBUTE
+    # SAME FOR ANY INSTANCE OF A CLASS
+    species = 'Mammal'
+    
+    def __init__(self, breed, name):
+        
+        # Attributes
+        # We take in the argument
+        # Assign it using self.attribute_name
+        self.breed = breed
+        self.name = name
+        
+    
+    # OPERATIONS/ACTIONS ---> Methods
+    def bark(self, num):
+        print('WOOF! My name is: ' + '{}'.format(self.name) * num)
+my_dog = Dog(breed='English Cream Retriever', name = 'Sonny')
+type(my_dog)
+print(my_dog.breed)
+print(my_dog.name)
+my_dog.species
+my_dog.bark(3)
+?
+?
+?
+?
+?
+class Circle():
+    
+    # CLASS OBJECT ATTRIBUTE
+    pi = 3.1415
+    
+    def __init__(self, radius=1):
+        self.radius = radius
+        
+    def get_circumference(self):
+        return self.radius * self.pi * 2
+    
+    def get_area(self):
+        return self.pi * self.radius**2
+    
+    def get_diameter(self):
+        return self.radius * 2
+my_circle = Circle(10)
+my_circle.get_circumference()
+?
+?
+?
+?
+?
+class Animal():
+    
+    def __init__(self):
+        print('ANIMAL CREATED')
+        
+    def who_am_i(self):
+        print('I am an animal')
+    
+    def eat(self):
+        print('I am eating')
+myanimal = Animal()
+class Dog(Animal):
+    
+    def __init__(self):
+        Animal.__init__(self)
+        print('Dog Created')
+        
+    def who_am_i(self):
+        print('I am a dog')
+        
+    def bark(self):
+        print('Woof!!')
+mydog = Dog()
+mydog.who_am_i()
+mydog.bark()
+class Book():
+    def __init__(self,title,author,pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+        
+    def __str__(self):
+        return f'{self.title} by {self.author}'
+    
+    def __len__(self):
+        return self.pages
+book = Book('Python rocks', 'Nicolo', 492)
+print(book)
+len(book)
+MAGIC/DUNDER METHODS
+class Book():
+    
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+        
+    def __str__(self):
+        return f'{self.title} by {self.author}'
+    
+    def __len__(self):
+        return self.pages
+    
+    def __del__(self):
+        print(f"{self.title} has been deleted")
+b = Book('C++ With Miyoshi', 'Michael T. Miyoshi', 20000)
+print(b)
+str(b)
+len(b)
+del b
+b
+CLASS HOMEWORK
+import math
+class Line:
+    
+    def __init__(self, p1=1, p2=1):
+        self.x1, self.x2 = p1
+        self.y1, self.y2 = p2
+        
+    def distance(self):
+        return math.sqrt((self.y2 - self.y1)**2 + (self.x2 - self.x1)**2)
+    
+    def slope(self):
+        return (self.y2 - self.y1) / (self.x2 - self.x1)
+c1 = (3, 2)
+c2 = (8, 10)
+?
+l = Line(c1, c2)
+l.distance()
+l.slope()
+class Cylinder():
+    
+    pi = math.pi
+    
+    def __init__(self, height=1, radius=1):
+        self.height = height
+        self.radius = radius
+        
+    def volume(self):
+        return (self.pi * self.radius**2 * self.height)
+    
+    def surface_area(self):
+        return ((2 * self.pi * self.radius * self.height) + (2 * self.pi * self.radius**2))
+c = Cylinder(2,3)
+c.volume()
+c.surface_area()
+class Account:
+    
+    def __init__(self, owner, balance=0):
+        self.balance = balance
+        self.owner = owner
+        
+    def __str__(self):
+        return f'The owner is {self.owner}, who has ${self.balance}'
+    
+    def deposit(self, amount=0):
+        self.balance += amount
+        return f'Deposit accepted! New balance is: ${self.balance}'
+        
+    def withdrawal(self, amount=0):
+        if (self.balance >= amount):
+            self.balance -= amount
+            return f'Withdrawal accepted! New balance is: ${self.balance}'
+        else:
+            return 'Amount is more than balance.'
+        
+    
+    
+acct1 = Account('Nicolo', 1000)
+print(acct1)
+acct1.owner
+acct1.balance
+acct1.deposit(100)
+acct1.withdrawal(1200)
+acct1.withdrawal(20)
+?
+ERRORS AND EXCEPTION HANDLING
+def add(n1, n2):
+    print(n1 + n2)
+add(10, 20)
+num1 = 10
+num2 = input('Please provide a number: ')
+add(num1, num2)
+print('Something happened!')
+try:
+    # WANT TO ATTEMPT THIS CODE
+    # MAY HAVE AN ERROR
+    result = 10 + 10
+except:
+    print('Hey it looks like you aren\'t adding correctly!')
+else:
+    print('Add went well')
+    print(result)
+try:
+    f = open('testfile', 'r')
+    f.write('Writing a test line')
+except TypeError:
+    print('There was a type arror!')
+except:
+    print('All other exceptions!')
+finally:
+    print('I always run!')
+    
+def ask_for_int():
+    while True:
+        try:
+            result = int(input('Please input and integer: '))
+        except:
+            print('That is not a number.')
+            continue
+        else:
+            print('Thank you.')
+            break
+        finally:
+            print('End of try/except/finally')
+            print('I will always run at the end.')
+ask_for_int()
+ask_for_int()
+try:
+    for i in ['a', 'b', 'c']:
+        print(i**2)
+except:
+    print('An error occurred')
+?
+x = 5
+y = 0
+?
+try:
+    z = x/y
+except:
+    print('An error occurred')
+finally:
+    print('All done!')
+def ask():
+    while True:
+        try:
+            num = int(input('Enter a number: '))
+            print(num**2)
+        except:
+            print('An error occured')
+            continue
+        else:
+            break
+ask()
+DECORATORS
+@some_decorator 
+def simple_func():
+    # Do simple stuff
+    return something
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-1-2fa2eb4a619f> in <module>
+----> 1 @some_decorator
+      2 def simple_func():
+      3     # Do simple stuff
+      4     return something
+
+NameError: name 'some_decorator' is not defined
+
+def func():
+    return 1
+func()
+1
+func
+<function __main__.func()>
+def hello():
+    return 'Hello!'
+hello()
+'Hello!'
+hello
+<function __main__.hello()>
+greet = hello
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-17-33bfc9d7ed86> in <module>
+----> 1 greet = hello
+
+NameError: name 'hello' is not defined
+
+greet
+<function __main__.hello()>
+del hello
+hello()
+---------------------------------------------------------------------------
+NameError                                 Traceback (most recent call last)
+<ipython-input-14-a75d7781aaeb> in <module>
+----> 1 hello()
+
+NameError: name 'hello' is not defined
+
+greet
+<function __main__.hello()>
+def hello(name='Nicolo'):
+    print('The hello function has been executed!')
+    
+    def greet():
+        return '\t This is the greet() function inside hello()'
+    
+    def welcome():
+        return '\t This is welcome() inside hello()'
+    
+    print('I am going to return a function.')
+    
+    if name == 'Nicolo':
+        return greet()
+    else:
+        return welcome()
+hello()
+The hello function has been executed!
+I am going to return a function.
+'\t This is the greet() function inside hello()'
+my_new_func = hello('Nicolo')
+The hello function has been executed!
+I am going to return a function.
+my_new_func
+'\t This is the greet() function inside hello()'
+def cool():
+    
+    def super_cool():
+        return 'I am very cool!'
+    
+    return super_cool
+some_func = cool()
+some_func
+<function __main__.cool.<locals>.super_cool()>
+some_func()
+'I am very cool!'
+def hello():
+    return 'Hi Nicolo!'
+def other(some_def_func):
+    print('Other code runs here!')
+    print(some_def_func())
+other(hello)
+Other code runs here!
+Hi Nicolo!
+other(hello())
+Other code runs here!
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-45-68d242273819> in <module>
+----> 1 other(hello())
+
+<ipython-input-43-f15b32bded7b> in other(some_def_func)
+      1 def other(some_def_func):
+      2     print('Other code runs here!')
+----> 3     print(some_def_func())
+
+TypeError: 'str' object is not callable
+
+def new_decorator(original_func):
+    
+    def wrap_func():
+        
+        print('Some extra code, before the original function')
+        
+        original_func()
+        
+        print('Some extra code, after the original function.')
+        
+    return wrap_func
+def func_needs_decorator():
+    print('I want to be decorated !')
+func_needs_decorator()
+I want to be decorated !
+decorated_func = new_decorator(func_needs_decorator)
+decorated_func()
+Some extra code, before the original function
+I want to be decorated !
+Some extra code, after the original function.
+@new_decorator
+def func_needs_decorator():
+    print('I want to be decorated!')
+func_needs_decorator()
+Some extra code, before the original function
+I want to be decorated!
+Some extra code, after the original function.
+GENERATORS
+def create_cubes(n):
+    for x in range(n):
+        yield x**3
+for x in create_cubes(10):
+    print(x)
+0
+1
+8
+27
+64
+125
+216
+343
+512
+729
+create_cubes
+<function __main__.create_cubes(n)>
+def gen_fib(n):
+    
+    a = 1
+    b = 1
+    for i in range(n):
+        yield a
+        a,b = b, a+b
+for num in gen_fib(10):
+    print(num)
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+def simple_gen():
+    for x in range(3):
+        yield x
+for num in simple_gen():
+    print(num)
+0
+1
+2
+g = simple_gen()
+g
+<generator object simple_gen at 0x000001B4531C5B10>
+print(next(g))
+0
+print(next(g))
+1
+print(next(g))
+2
+print(next(g))
+---------------------------------------------------------------------------
+StopIteration                             Traceback (most recent call last)
+<ipython-input-21-1dfb29d6357e> in <module>
+----> 1 print(next(g))
+
+StopIteration: 
+
+s = 'hello'
+for c in s:
+    print(c)
+h
+e
+l
+l
+o
+next(s)
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-25-61c30b5fe1d5> in <module>
+----> 1 next(s)
+
+TypeError: 'str' object is not an iterator
+
+s_iter = iter(s)
+next(s_iter)
+'h'
+next(s_iter)
+'e'
+next(s_iter)
+'l'
+next(s_iter)
+'l'
+next(s_iter)
+'o'
+next(s_iter)
+---------------------------------------------------------------------------
+StopIteration                             Traceback (most recent call last)
+<ipython-input-33-9c75d6e5ae59> in <module>
+----> 1 next(s_iter)
+
+StopIteration: 
+
+def gen_squares(n):
+    for x in range(n):
+        yield x**2
+for x in gen_squares(10):
+    print(x)
+0
+1
+4
+9
+16
+25
+36
+49
+64
+81
+import random
+def rand_num(low, high, n):
+    
+    for x in range(n):
+        yield random.randint(low, high)
+for num in rand_num(10, 20, 5):
+    print(num)
+15
+10
+19
+14
+14
+s = 'hello'
+s_iter = iter(s)
+print(next(s_iter))
+h
+When to not use a regular loop to return something:
+
+If the loop is going to store a lot of variables in a list or other type of data structure, using a generator will allow the computer to return every item without storing the return items in memory. This becomes very memory efficient, with the sacrifice of a little bit of speed.
+
+my_list = [1,2,3,4,5]
+?
+gencomp = (item for item in my_list if item > 3)
+for item in gencomp:
+    print(item)
+<class 'generator'>
+4
+5
+What the code above does:
+
+gencomp uses generator comprehension* to iterate through every item in my_list and append the number to the gencomp list if the number in my_list is greater than 3.
+
+* much like list comprehension, list comprehension uses [], generator comprehension uses (), generator comprehension generates the list rather than storing it, then returning it
+
+?
